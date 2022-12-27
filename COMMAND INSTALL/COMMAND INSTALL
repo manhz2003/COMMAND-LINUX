@@ -1,0 +1,25 @@
+Lệnh cài đặt chrome
+sudo apt update
+sudo apt upgrade
+sudo apt install wget
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+google-chrome
+
+Lệnh cài đặt unikey
+sudo apt-get install ibus-unikey
+ibus restart
+
+Lệnh cài đặt git
+sudo apt update
+sudo apt install git
+git --version
+
+cấu hình tài khoản git
+git config --global user.name "name"
+git config --global user.email "email"
+
+kiểm tra thông tin git
+git config --list
+
+
