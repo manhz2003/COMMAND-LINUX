@@ -22,4 +22,11 @@ git config --global user.email "email"
 kiểm tra thông tin git
 git config --list
 
+Lệnh cài đặt xampp
+Bước 1: Mở liên kết sau và cài đặt xampp phiên bản cho linux vào mục downloads
+https://www.apachefriends.org/index.html
+Bước 2: cd Downloads
+Bước 3: chmod 755 xampp-linux-*-installer.run
+Bước 4: sudo ./xampp-linux-*-installer.run
+Bước 5: sudo /opt/lampp/./manager-linux-x64.run (khởi động xampp)
 
