@@ -1,0 +1,34 @@
+CÁC LỆNH CƠ BẢN TRÊN UBUNTU LINUX
+
+I- update và upgrade
+sudo apt update (tìm kiếm thông tin của những bản cập nhật phần mềm mới nhất trên internet về máy)
+sudo apt upgrade (nâng cấp tất cả những bản cập nhật được tìm thấy ở lệnh update)
+
+II- ls, cd, clear
+Lệnh ls
+ls (hiển thị các thư mục đang tồn tại)
+ls -l (hiển thị chi tiết thông tin các thư mục hiện tại)
+ls -a (hiển thị tất cả thư mục, bao gồm cả thư mục bị ẩn)
+ls -la (gộp của 2 lệnh ls -l và ls -a)
+ls -R (hiển thị thêm cả các thư mục con bên trong của thư mục hiện tại)
+
+Lệnh cd
+cd (di chuyển qua lại giữa các thư mục, gõ cd và bấm tab 2 lần để liệt kê các thư mục có thể đến
+và gõ vài ký tự đầu để nó tự gợi ý thư mục muốn đến)
+cd .. (quay trở lại 1 cấp)
+cd ../.. (quay trở lại 2 cấp ...)
+cd / (quay trở về root)
+
+clear (giúp dọn dẹp tất cả nội dung đang hiển thị trên terminal)
+
+III- mkdir, touch
+Lệnh mkdir (để tạo ra 1 thư mục mới)
+mkdir folder_name (tạo 1 thư mục mới, có thể thay folder_name bằng tên khác)
+mkdir folder1/folder2/folder3 -p (tạo nhiều thư mục con bên trong)
+rmdir folder_name (xóa 1 thư mục trống, có thể thay folder_name bằng tên khác)
+rmdir -r folder_name (xóa thư mục đó và các thư mục cấp con bên trong)
+
+Lệnh touch (để tạo ra 1 file mới với đuôi đinh dạng bất kì)
+touch index.html (tạo file html)
+touch hello.txt (tạo ra file text)
+rm file_name (xóa 1 file, ví dụ rm index.html)

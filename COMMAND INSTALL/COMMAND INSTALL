@@ -29,4 +29,18 @@ Bước 2: cd Downloads
 Bước 3: chmod 755 xampp-linux-*-installer.run
 Bước 4: sudo ./xampp-linux-*-installer.run
 Bước 5: sudo /opt/lampp/./manager-linux-x64.run (khởi động xampp)
+Gỡ cài đặt xampp bằng lệnh sudo /opt/lampp/uninstall
+
+Lệnh cài đặt maven
+Bước 1: sudo apt update -y
+Bước 2: sudo apt install maven -y
+Bước 3: mvn --version
+
+Lệnh cài đặt tomcat
+Bước 1: truy trang chủ tomcat và tải file có đuôi tar.gz về mục download
+https://tomcat.apache.org/download-10.cgi
+Bước 2: chuột phải chọn giải nén
+
+Lệnh cài đặt mySQL WorkBench
+
 
