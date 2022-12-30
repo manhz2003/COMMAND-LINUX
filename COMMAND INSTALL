@@ -21,6 +21,12 @@ git config --global user.email "email"
 kiểm tra thông tin git
 git config --list
 
+Lệnh cài đặt jre và jdk
+sudo apt install default-jre
+java --version
+sudo apt install default-jdk
+javac --version
+
 Lệnh cài đặt maven
 Bước 1: sudo apt update -y
 Bước 2: sudo apt install maven -y

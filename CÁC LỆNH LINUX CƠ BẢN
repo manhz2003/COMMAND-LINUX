@@ -32,3 +32,8 @@ Lệnh touch (để tạo ra 1 file mới với đuôi đinh dạng bất kì)
 touch index.html (tạo file html)
 touch hello.txt (tạo ra file text)
 rm file_name (xóa 1 file, ví dụ rm index.html)
+
+IV- cat, echo, tail, grep
+Lệnh cat
+
+
