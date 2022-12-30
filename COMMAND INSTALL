@@ -42,19 +42,31 @@ Lệnh cài đặt mySQL và WorkBench
 Bước 1: sudo apt install mysql-server
 Bước 2: sudo mysql_secure_installation (thiết lập mật khẩu cho mysql)
 Bước 3: điền số 0 để làm mật khẩu yếu tại dòng  Pease enter 0 = LOW, 1 = MEDIUM and 2 = STRONG:
+Nếu đặt mật khẩu bị lỗi thì mở tab terminal mới và sử dụng cách sau:
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'Manhz2003';
 Bước 4: mysql -u root -p
-Bước 5: show databases;  (hiển thị các database hiện có)
-Bước 6:  create database test; (tạo database)
+Bước 5: show databases; (hiển thị các database hiện có)
+Bước 6: create database test; (tạo database)
 Bước 7: quit (thoát khỏi mysql)
+
 2. workbench
 Bước 1:  truy cập vào link và tải tệp apt về dowsloads
 https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/linux-installation.html
 Bước 2: cd Downloads
 Bước 3: sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
-Bước 4: sudo apt update
-Bước 5: sudo apt upgrade
-Bước 6: sudo apt install mysql-workbench-community
-Bấm vào menu và tìm kiếm workbench
+Bước 4: tại dòng mySQL Preview Packages (Currently selected) chuyển sang Enabled, sau đó chọn tab ok
+Bước 5: sudo apt update
+Bước 6: sudo apt upgrade
+Bước 7: sudo apt install mysql-workbench-community
+done !
+
+4. Gỡ cài đặt mysql và workbench
+sudo systemctl stop mysql
+sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
+sudo rm -rf /etc/mysql /var/lib/mysql
+sudo apt autoremove
+sudo apt autoclean
 
 Lệnh cài đặt xampp
 Bước 1: Mở liên kết sau và cài đặt xampp phiên bản cho linux vào mục downloads
@@ -64,9 +76,5 @@ Bước 3: chmod 755 xampp-linux-*-installer.run
 Bước 4: sudo ./xampp-linux-*-installer.run
 Bước 5: sudo /opt/lampp/./manager-linux-x64.run (khởi động xampp)
 Gỡ cài đặt xampp bằng lệnh sudo /opt/lampp/uninstall
-
-
-
-
 
 
