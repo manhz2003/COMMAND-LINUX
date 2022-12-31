@@ -1,13 +1,9 @@
 CÁC LỆNH CƠ BẢN TRÊN UBUNTU LINUX
 
-I- update và upgrade
-sudo apt update (tìm kiếm thông tin của những bản cập nhật phần mềm mới nhất trên internet về máy)
-sudo apt upgrade (nâng cấp tất cả những bản cập nhật được tìm thấy ở lệnh update)
-
 cd= dịch chuyển, ls= xem trạng thái, mkdir= tạo thư mục, touch= tạo file, cp= coppy, mv= dịch chuyển và đổi tên, rm= xóa file, rmdir= xóa thư mục.
 cat= đọc file, echo= ghi file, tail= xem nội dung cuối file, grep= tìm kiếm theo kí tự.
 
-II- ls, cd, clear
+I- ls, cd, clear
 Lệnh ls
 ls (hiển thị các thư mục đang tồn tại)
 ls -l (hiển thị chi tiết thông tin các thư mục hiện tại)
@@ -24,7 +20,7 @@ cd / (quay trở về root)
 
 clear (giúp dọn dẹp tất cả nội dung đang hiển thị trên terminal)
 
-III- mkdir, touch, cp, mv, rm, rmdir
+II- mkdir, touch, cp, mv, rm, rmdir
 Lệnh mkdir (để tạo ra 1 thư mục mới)
 mkdir folder_name (tạo 1 thư mục mới, có thể thay folder_name bằng tên khác)
 mkdir folder1/folder2/folder3 -p (tạo nhiều thư mục con bên trong)
@@ -55,7 +51,7 @@ Lệnh rmdir (xóa thư mục)
 rmdir HTML (chỉ xóa thư mục rỗng không chứa file bên trong)
 rm -r (xóa cả thư mục lẫn file bên trong nó)
 
-IV- cat, echo, tail, grep
+III- cat, echo, tail, grep
 Lệnh cat (đọc nội dung file)
 cat text.txt (đọc nội dung của file, tất cả các định đạng file)
 cat test.txt index.html hello.css (có thể đọc nhiều file cùng 1 lúc, viết các file cách nhau 1 khoảng trắng)
@@ -75,6 +71,37 @@ Lệnh grep (tìm kí tự trong file)
 cat text.html | grep xinchao (tìm những kí tự có trong file, tìm kí tự xinchao)
 echo "test grep" | grep test (tìm kí tự test)
 
+IV- man, wget, apt
+Lệnh man (dùng để tra cứu các lệnh khác trên ubuntu man + ten_lenh_tra_cuu)
+man tail (tra cứu lệnh tail)
+
+Lệnh wget (dùng để tải các file qua đường dẫn trên google)
+wget https://cdn.sforum.vn/sforum/wp-content/uploads/2021/09/00-Linux.png (tải 1 bức ảnh)
+
+Lệnh apt (công cụ quản lý gói các tập tin phần mềm trên máy dùng để quản lý, nâng cấp, tải xuống các phần mềm)
+sudo apt update (tìm kiếm thông tin của những bản cập nhật phần mềm mới nhất trên internet về máy)
+sudo apt upgrade (nâng cấp tất cả những bản cập nhật được tìm thấy ở lệnh update)
+sudo apt install nodejs (tải phần mềm nodejs)
+
+V- kill, uname, passwd
+Lệnh kill (tắt 1 tiến trình đang hoạt động)
+ps aux (kiểm tra các tiến trình đang chạy)
+kill 3498 (kill + id của tiến trình xem trong lệnh ps aux để tắt tiến trình)
+
+Lệnh uname (xem thông tin phiên bản của hệ điều hành)
+uname -a
+
+Lệnh passwd (đổi mật khẩu ubuntu hiện tại)
+
+VI- top, df, free
+Lệnh top (xem thông tin chi tiết các tiến trình đang chạy và cập nhật liên tục)
+top
+
+Lệnh df (xem thông tin dung lượng của ổ cứng)
+df -h
+
+Lệnh free (kiểm tra hoạt động của ram)
+free -h
 
 
 

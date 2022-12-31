@@ -1,0 +1,11 @@
+CÁC LỆNH LINUX NÂNG CAO
+
+I- sudo, chmod, chown
+Lệnh sudo
+(supper user- siêu người dùng cho phép sử dụng các quyền lớn nhất mà user bình thường không có)
+Lệnh chomd
+(change mode- dùng để phân quyền hạn cho thư mục hoặc file)
+3 vai trò:
+	+ chủ sở (hữu user)
+	+ nhóm sở (hữu group)
+	+ Còn lại (other)
