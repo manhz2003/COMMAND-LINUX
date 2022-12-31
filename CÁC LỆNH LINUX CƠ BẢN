@@ -4,6 +4,9 @@ I- update và upgrade
 sudo apt update (tìm kiếm thông tin của những bản cập nhật phần mềm mới nhất trên internet về máy)
 sudo apt upgrade (nâng cấp tất cả những bản cập nhật được tìm thấy ở lệnh update)
 
+cd= dịch chuyển, ls= xem trạng thái, mkdir= tạo thư mục, touch= tạo file, cp= coppy, mv= dịch chuyển và đổi tên, rm= xóa file, rmdir= xóa thư mục.
+cat= đọc file, echo= ghi file, tail= xem nội dung cuối file, grep= tìm kiếm theo kí tự.
+
 II- ls, cd, clear
 Lệnh ls
 ls (hiển thị các thư mục đang tồn tại)
@@ -21,19 +24,83 @@ cd / (quay trở về root)
 
 clear (giúp dọn dẹp tất cả nội dung đang hiển thị trên terminal)
 
-III- mkdir, touch
+III- mkdir, touch, cp, mv, rm, rmdir
 Lệnh mkdir (để tạo ra 1 thư mục mới)
 mkdir folder_name (tạo 1 thư mục mới, có thể thay folder_name bằng tên khác)
 mkdir folder1/folder2/folder3 -p (tạo nhiều thư mục con bên trong)
 rmdir folder_name (xóa 1 thư mục trống, có thể thay folder_name bằng tên khác)
 rmdir -r folder_name (xóa thư mục đó và các thư mục cấp con bên trong)
 
-Lệnh touch (để tạo ra 1 file mới với đuôi đinh dạng bất kì)
+Lệnh touch (để tạo ra 1 file mới)
 touch index.html (tạo file html)
 touch hello.txt (tạo ra file text)
 rm file_name (xóa 1 file, ví dụ rm index.html)
 
+Lệnh cp (để coppy file hoặc folder)
+cp test.html demo.html (file test.html được coppy sang file demo.html)
+cp test.html new_folder (file test.html được coppy vào bên trong thư mục new_folder)
+cp /home/manh/Documents/COMMAND/test.html /home/manh/Downloads/test.css (coppy từ vị trí này sang vị trí khác ngoài thư mục hiện tại)
+cp -r COMMAND COMMAND2 (coppy thư mục sang thư mục mới, bao gồm cả file bên trong thư mục)
+
+Lệnh mv (di chuyển và đổi tên file)
+mv test.html test2.html (đổi tên file test1 = test2)
+mv HTML/ HTML2 (đổi tên thư mục HTML sang HTML2)
+mv test.html HTML/ (di chuyển file test.html vào thư mục HTML)
+mv HTML/ HTML2/ (di chuyển thư mục HTMl vào thư mục HTML2)
+
+Lệnh rm (xóa file)
+rm test.html (xóa file test.html)
+
+Lệnh rmdir (xóa thư mục)
+rmdir HTML (chỉ xóa thư mục rỗng không chứa file bên trong)
+rm -r (xóa cả thư mục lẫn file bên trong nó)
+
 IV- cat, echo, tail, grep
-Lệnh cat
+Lệnh cat (đọc nội dung file)
+cat text.txt (đọc nội dung của file, tất cả các định đạng file)
+cat test.txt index.html hello.css (có thể đọc nhiều file cùng 1 lúc, viết các file cách nhau 1 khoảng trắng)
+
+Lệnh echo (ghi nội dung ra terminal và chèn vào file)
+echo "đây là 1 đoạn văn bản" (Giúp ghi ra nội dung văn bản lên terminal)
+echo "<h1>hello world</h1> > test.html (ghi nội dung sau đó chèn vào file text.html)
+echo "<h1>hello world</h1> > test.html (ghi đè nội dung của dòng trên)
+echo "<h1>hello world</h1> >> test.html  (ghi nội dung lần lượt xuống dòng)
+
+Lệnh tail (xem nội dung cuối file)
+tail text.html (xem nội dung của 10 dòng cuối trong file)
+tail -n 5 text.html (có thể đặt số lượng dòng cần xem)
+tail -f text.html (folow theo sự thay đổi của file đó, khi nội dung mới được thêm vào thì tự động hiển thị theo)
+
+Lệnh grep (tìm kí tự trong file)
+cat text.html | grep xinchao (tìm những kí tự có trong file, tìm kí tự xinchao)
+echo "test grep" | grep test (tìm kí tự test)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

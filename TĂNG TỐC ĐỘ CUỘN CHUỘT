@@ -1,11 +1,9 @@
 Cách tăng tốc độ cuộn chuột
 sudo apt install imwheel
 cd Downloads (di chuyển đến Downloads)
-touch mousewheel.sh (tạo 1 file trên Downloads)
+touch mousewheel.sh (tạo 1 file trên Downloads) Dán đoạn mã bên dưới vào file vừa tạo ở desktop sau đó lưu lại
 chmod +x mousewheel.sh
 ./mousewheel.sh 
-
-Dán đoạn mã này vào file vừa tạo ở desktop sau đó lưu lại
 
 #!/bin/bash
 # Version 0.1 Tuesday, 07 May 2013
