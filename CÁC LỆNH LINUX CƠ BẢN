@@ -58,9 +58,9 @@ cat test.txt index.html hello.css (có thể đọc nhiều file cùng 1 lúc, v
 
 Lệnh echo (ghi nội dung ra terminal và chèn vào file)
 echo "đây là 1 đoạn văn bản" (Giúp ghi ra nội dung văn bản lên terminal)
-echo "<h1>hello world</h1> > test.html (ghi nội dung sau đó chèn vào file text.html)
-echo "<h1>hello world</h1> > test.html (ghi đè nội dung của dòng trên)
-echo "<h1>hello world</h1> >> test.html  (ghi nội dung lần lượt xuống dòng)
+echo "<h1>hello world</h1>" > test.html (ghi nội dung sau đó chèn vào file text.html)
+echo "<h1>hello world</h1>" > test.html (ghi đè nội dung của dòng trên)
+echo "<h1>hello world</h1>" >> test.html  (ghi nội dung lần lượt xuống dòng)
 
 Lệnh tail (xem nội dung cuối file)
 tail text.html (xem nội dung của 10 dòng cuối trong file)
@@ -81,7 +81,13 @@ wget https://cdn.sforum.vn/sforum/wp-content/uploads/2021/09/00-Linux.png (tải
 Lệnh apt (công cụ quản lý gói các tập tin phần mềm trên máy dùng để quản lý, nâng cấp, tải xuống các phần mềm)
 sudo apt update (tìm kiếm thông tin của những bản cập nhật phần mềm mới nhất trên internet về máy)
 sudo apt upgrade (nâng cấp tất cả những bản cập nhật được tìm thấy ở lệnh update)
+sudo apt search nodejs (tìm kiếm các gói phần mềm có trong kho của apt)
 sudo apt install nodejs (tải phần mềm nodejs)
+sudo apt remove nodejs (gỡ cài đặt phần mềm)
+
+snap (tương tự như apt là gói chứa các phần mềm)
+snap search vscode (tìm phần mềm vs code)
+sudo snap install --classic sublime-text (cai dat phan mem sublime-text)
 
 V- kill, uname, passwd
 Lệnh kill (tắt 1 tiến trình đang hoạt động)
@@ -102,32 +108,4 @@ df -h
 
 Lệnh free (kiểm tra hoạt động của ram)
 free -h
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

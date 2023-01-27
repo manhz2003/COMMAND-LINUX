@@ -20,7 +20,6 @@ git config --global user.name "name"
 git config --global user.email "email"
 kiểm tra thông tin git
 git config --list
-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
 
 Lệnh cài đặt jre và jdk
 sudo apt install default-jre
